@@ -1,0 +1,180 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('cu.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0.90);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 40px;
+      flex-shrink: 0;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+      font-family: Cambria, Georgia, serif;
+      color: #00e0d8; /* teal */
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .login-btn {
+      padding: 10px 22px;
+      background: #afaea7; /* golden */
+      color: #000;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .login-btn:hover {
+      background: #ffffff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Main Section */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 25px 60px;
+      gap: 60px;
+    }
+
+    /* Left Section */
+    .left-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px 85px;
+    }
+
+    .caption-box {
+      margin-bottom: 2px;
+      font-size: 15px;
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1.5;
+      color: #f5f5f5;
+      font-weight: 500;
+      max-width: 100%;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 2px;
+      color: #ffd700; /* golden heading */
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 2px 2px 5px #9a9595;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      color: #ffffff; /* teal subheading */
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 1px 1px 4px #000000;
+    }
+
+    .card-table {
+      border-collapse: collapse;
+      width: 90%;
+      border-top-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    th, td {
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.08);
+      text-align: center;
+    }
+
+    th {
+      background-color: rgba(0, 128, 128, 0.8);
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    a.table-link {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #948d8dfe;
+      color: #000;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a.table-link:hover {
+      background: #ffffff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Right Section */
+    .right-section {
+      flex: 0.7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      padding-bottom: 50px; /* push second image slightly above footer */
+    }
+
+    .image-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .image-box img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #0d918f;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .caption {
+      margin-top: 5px;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #ffd700;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px #9a9595;
+    }

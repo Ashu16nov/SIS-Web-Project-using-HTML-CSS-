@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add this CSS inside style.css or in the <style> tag */
+        .table-container {
+    display: flex;
+    flex-direction: row;       /* Horizontal layout */
+    justify-content: space-around;
+    gap: 20px;                 /* Space between tables */
+    padding: 20px;
+    flex-wrap: nowrap;         /* Ensure single row */
+    overflow-x: auto;          /* Adds scroll if screen too small */
+}
+
+        .department {
+            flex: 1;
+            min-width: 300px;
+            max-width: 30%;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UIC, Chandigarh University</h1>
+        <nav>
+            <ul><u><b>Course Details</b></u></ul>
+        </nav>
+    </header>
+
+    <section id="courses" class="card">
+        <h2>Course Modules</h2>
+        <div class="table-container">
+
+            <!-- Department 1 -->
+            <div class="department">
+                <h3>Department of Computer Science</h3>
+                <table>
+                    <tr><th>Course ID</th><th>Course</th></tr>
+                    <tr><td>CS101</td><td>Programming in C/C++</td></tr>
+                    <tr><td>CS102</td><td>Python</td></tr>
+                    <tr><td>CS103</td><td>DSA</td></tr>
+                </table>
+            </div>
+
+            <!-- Department 2 -->
+            <div class="department">
+                <h3>Department of Information Technology</h3>
+                <table>
+                    <tr><th>Course ID</th><th>Course</th></tr>
+                    <tr><td>IT201</td><td>ADBMS</td></tr>
+                    <tr><td>IT202</td><td>Web Development</td></tr>
+                    <tr><td>IT203</td><td>Networking Basics</td></tr>
+                </table>
+            </div>
+
+            <!-- Department 3 -->
+            <div class="department">
+                <h3>Department of Software Engineering</h3>
+                <table>
+                    <tr><th>Course ID</th><th>Course</th></tr>
+                    <tr><td>SE301</td><td>Software Testing</td></tr>
+                    <tr><td>SE302</td><td>Project Management</td></tr>
+                    <tr><td>SE303</td><td>Agile Development</td></tr>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Department of Computer Applications</p>
+    </footer>
+</body>
+</html>
